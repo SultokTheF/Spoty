@@ -6,7 +6,6 @@ const Signup = () => {
 
   const handleSignup = (e) => {
     e.preventDefault();
-    // Get form data
     const formData = {
       email: e.target.email.value,
       password: e.target.password.value,

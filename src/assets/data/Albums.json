@@ -3,7 +3,9 @@
     "name": "Radiohead",
     "albums": [
       {
+        "id": 1,
         "title": "The King of Limbs",
+        "image": "https://oberlinreview.org/wp-content/uploads/2014/01/0584bbb3e0bebff23e19d3df2e924510.jpg",
         "songs": [
           {
             "title": "Bloom",
@@ -41,7 +43,9 @@
         "description": "\n\tThe King of Limbs is the eighth studio album by English rock band Radiohead, produced by Nigel Godrich. It was self-released on 18 February 2011 as a download in MP3 and WAV formats, followed by physical CD and 12\" vinyl releases on 28 March, a wider digital release via AWAL, and a special \"newspaper\" edition on 9 May 2011. The physical editions were released through the band's Ticker Tape imprint on XL in the United Kingdom, TBD in the United States, and Hostess Entertainment in Japan.\n      "
       },
       {
+        "id": 2,
         "title": "OK Computer",
+        "image": "https://npr.brightspotcdn.com/dims4/default/ba8f827/2147483647/strip/true/crop/1195x672+0+264/resize/1200x675!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fwshu%2Ffiles%2F201705%2Fokcomputer.jpg",
         "songs": [
           {
             "title": "Airbag",
@@ -100,7 +104,9 @@
     "name": "Portishead",
     "albums": [
       {
+        "id": 3,
         "title": "Dummy",
+        "image": "https://live-production.wcms.abc-cdn.net.au/7285609f4eb4790b71e1e27e233389b6?impolicy=wcms_crop_resize&cropH=1125&cropW=2000&xPos=0&yPos=0&width=862&height=485",
         "songs": [
           {
             "title": "Mysterons",
@@ -150,7 +156,9 @@
         "description": "\n\tDummy is the debut album of the Bristol-based group Portishead. Released in August 22, 1994 on Go! Discs, the album earned critical acclaim, winning the 1995 Mercury Music Prize. It is often credited with popularizing the trip-hop genre and is frequently cited in lists of the best albums of the 1990s. Although it achieved modest chart success overseas, it peaked at #2 on the UK Album Chart and saw two of its three singles reach #13. The album was certified gold in 1997 and has sold two million copies in Europe. As of September 2011, the album was certified double-platinum in the United Kingdom and has sold as of September 2011 825,000 copies.\n      "
       },
       {
+        "id": 4,
         "title": "Third",
+        "image": "https://imusic.b-cdn.net/images/item/original/012/0602517664012.jpg?portishead-2008-third-cd&class=scaled&v=1404312432",
         "songs": [
           {
             "title": "Silence",
@@ -205,7 +213,9 @@
     "name": "Kendrick Lamar",
     "albums": [
       {
+        "id": 5,
         "title": "Good Kid, M.A.A.D City",
+        "image": "https://media.licdn.com/dms/image/C5612AQHJExx7m8JLkg/article-cover_image-shrink_600_2000/0/1520224349471?e=2147483647&v=beta&t=JxW900MU-ok1NLX0NsMfL0e0ROzI0gTVBdfm33kvj1w",
         "songs": [
           {
             "title": "Sherane a.k.a Master Splinter's Daughter",

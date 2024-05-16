@@ -1,23 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS CSS
-
-// Import your JSON data
+import 'aos/dist/aos.css';
 import newsData from "../../assets/data/News.json";
 
 const News = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // Initialize AOS with a duration (in milliseconds)
-  }, []); // Run this effect only once when the component mounts
+    AOS.init({ duration: 1000 });
+  }, []);
 
   const [expandedNews, setExpandedNews] = useState({});
 
   const handleReadMore = (e, id) => {
-    e.preventDefault(); // Prevent default behavior (scrolling to top)
+    e.preventDefault();
     setExpandedNews({ ...expandedNews, [id]: true });
   };
 
-  const news = newsData; // Use the imported JSON data directly
+  const handleReadLess = (e, id) => {
+    e.preventDefault();
+    setExpandedNews({ ...expandedNews, [id]: false });
+  };
+
+  const news = newsData;
 
   return (
     <section className="bg-white dark:bg-gray-900 py-8">
@@ -44,7 +47,16 @@ const News = () => {
                       </p>
                     </>
                   ) : (
-                    <p className="text-sm text-gray-700 dark:text-gray-300">{item.content}</p>
+                    <>
+                      <p className="text-sm text-gray-700 dark:text-gray-300">{item.content}</p>
+                      {expandedNews[item.id] && (
+                        <p className="mt-2">
+                          <a href="#" className="text-blue-500 dark:text-blue-400 hover:underline" onClick={(e) => handleReadLess(e, item.id)}>
+                            Read Less
+                          </a>
+                        </p>
+                      )}
+                    </>
                   )}
                 </div>
               </div>
