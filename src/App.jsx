@@ -4,7 +4,9 @@ import { AuthProvider } from './hooks/useAuth';
 
 import {
   Navbar,
-  News
+  News,
+  Signup,
+  Login
 } from './components';
 
 const App = () => {
@@ -13,8 +15,9 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<News />} />
-        {/* <Route path="/about" element={<About />} /> */}
-        {/* <Route path="/contact" element={<Contact />} /> */}
+
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </AuthProvider>
   );

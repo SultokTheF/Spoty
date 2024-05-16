@@ -26,6 +26,7 @@ export const useAuth = () => {
     const user = users.find((u) => u.email === formData.email && u.password === formData.password);
     if (user) {
       setCurrentUser(user);
+      localStorage.setItem('currentUser', JSON.stringify(user));
       alert('Login successful!');
       window.location.reload();
       window.location.href = '/';
@@ -37,8 +38,9 @@ export const useAuth = () => {
 
   const logout = () => {
     setCurrentUser(null);
+    localStorage.removeItem('currentUser');
     alert('Logout successful!');
-    window.location.reload();
+    window.location.href = '/login';
   };
 
   return { currentUser, register, login, logout };
