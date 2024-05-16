@@ -1,8 +1,22 @@
+import { Routes, Route } from 'react-router-dom';
+
+import { AuthProvider } from './hooks/useAuth';
+
+import {
+  Navbar,
+  News
+} from './components';
+
 const App = () => {
   return (
-    <div>
-      <h1>Hello, World!</h1>
-    </div>
+    <AuthProvider>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<News />} />
+        {/* <Route path="/about" element={<About />} /> */}
+        {/* <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
+    </AuthProvider>
   );
 }
 
